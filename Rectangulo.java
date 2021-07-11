@@ -1,5 +1,3 @@
-import org.w3c.dom.css.Rect;
-
 public class Rectangulo {
     private Integer base;
     private Integer altura;
@@ -35,13 +33,14 @@ public class Rectangulo {
         return (base + altura) / 2;
     }
 
-    public Rectangulo crearRectangulo(int base, int altura) {
-        Rectangulo rectangulo = new Rectangulo();
+    // ASK no entiendo bien para que es esto
+    // public Rectangulo crearRectangulo(int base, int altura) {
+    //     Rectangulo rectangulo = new Rectangulo();
 
-        rectangulo.setBase(base);
-        rectangulo.setAltura(altura);
-        return rectangulo;
-    }
+    //     rectangulo.setBase(base);
+    //     rectangulo.setAltura(altura);
+    //     return rectangulo;
+    // }
 
     @Override
     public String toString() {
@@ -49,6 +48,19 @@ public class Rectangulo {
             " base='" + getBase() + "'" +
             ", altura='" + getAltura() + "'" +
             "}";
+    }
+
+    public void dibujarRectangulo() {
+        for (int alto = 0; alto < this.getAltura(); alto++) {
+            for (int base = 0; base < this.getBase(); base++) {
+                if (alto == 0 || alto == (this.getAltura() - 1) || base == 0 || base == (this.getBase() - 1) ) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
     }
     
 }

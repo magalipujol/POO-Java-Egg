@@ -1,12 +1,14 @@
-import java.util.concurrent.RecursiveTask;
+
 
 public class ejercicio4 {
     public static void main(String[] args) {
         Rectangulo rectangulo = new Rectangulo();
+        rectangulo.setAltura(4);
+        rectangulo.setBase(6);
 
+        System.out.println(rectangulo.toString());
 
-        Rectangulo rectanguloHije = rectangulo.crearRectangulo(2, 1);
-        System.out.println(rectanguloHije.toString());
+        rectangulo.dibujarRectangulo();
 
     }
 }

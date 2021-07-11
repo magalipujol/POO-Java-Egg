@@ -24,7 +24,7 @@ public class PersonaControl {
                 System.out.println("El sexo no existe");
             }
         } while (sexoCorrecto == false);
-        
+        leer.close();
         return persona;
     }
 
