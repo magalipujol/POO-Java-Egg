@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class PersonaControl {
     
+    Scanner leer = new Scanner(System.in);
     public Persona crearPersona() {
         Persona persona = new Persona();
-        Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese el nombre");
         persona.setNombre(leer.next());
         System.out.println("Ingrese la edad");
@@ -24,7 +24,7 @@ public class PersonaControl {
                 System.out.println("El sexo no existe");
             }
         } while (sexoCorrecto == false);
-        leer.close();
+
         return persona;
     }
 

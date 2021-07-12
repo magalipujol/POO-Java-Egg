@@ -8,7 +8,7 @@ public class ejercicio7 {
         boolean[] vectorEdad = new boolean[4];
 
         int i;
-        for (i = 0; i < 2; i++) {
+        for (i = 0; i < 4; i++) {
             vectorPersonas[i] = personaControl.crearPersona();
             vectorEdad[i] = personaControl.esMayorDeEdad(vectorPersonas[i]);
             vectorIMC[i] = personaControl.calcularIMC(vectorPersonas[i]);
