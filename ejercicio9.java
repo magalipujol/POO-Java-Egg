@@ -9,5 +9,7 @@ public class ejercicio9 {
         System.out.println(numeros.toString());
         System.out.println("El mayor es " + numeros.devolverMayor(numeros));
         System.out.println(numeros.calcularPotencia(numeros));
+        System.out.println(numeros.calcularRaiz(numeros));
+
     }
 }

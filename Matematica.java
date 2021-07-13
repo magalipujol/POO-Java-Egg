@@ -47,4 +47,12 @@ public class Matematica {
         }
     }
 
+    public double calcularRaiz(Matematica numeros) {
+        if (devolverMayor(numeros) == numeros.getNumero1()) {
+            return Math.sqrt(Math.round(numeros.getNumero2()));
+        } else {
+            return Math.sqrt(Math.round(numeros.getNumero1()));
+        }
+    }
+
 }
