@@ -1,6 +1,6 @@
+package ejercicio8;
 import java.net.ContentHandlerFactory;
 import java.util.Scanner;
-import org.apache.commons.lang3.StringUtils;
 
 public class CadenaControl {
     

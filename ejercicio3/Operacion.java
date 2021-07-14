@@ -1,3 +1,4 @@
+package ejercicio3;
 public class Operacion {
     private Integer numero1;
     private Integer numero2;

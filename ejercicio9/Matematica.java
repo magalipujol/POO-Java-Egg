@@ -1,3 +1,4 @@
+package ejercicio9;
 public class Matematica {
     private double numero1;
     private double numero2;

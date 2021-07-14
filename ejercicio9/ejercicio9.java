@@ -1,4 +1,4 @@
-import org.graalvm.compiler.replacements.DefaultJavaLoweringProvider;
+package ejercicio9;
 
 public class ejercicio9 {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package ejercicio7;
 public class Persona {
     private String nombre;
     private Integer edad;

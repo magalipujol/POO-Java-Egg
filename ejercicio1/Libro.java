@@ -1,3 +1,4 @@
+package ejercicio1;
 public class Libro {
     public int ISBN;
     public String titulo;

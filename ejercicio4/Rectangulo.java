@@ -1,3 +1,4 @@
+package ejercicio4;
 public class Rectangulo {
     private Integer base;
     private Integer altura;
