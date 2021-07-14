@@ -36,18 +36,42 @@ public class Persona {
 
     public void crearPersona(){
         System.out.println("Nombre:");
-        nombre=input.next();
+        name=leer.next();
         
         int dia, mes, anio;
         System.out.println("Día de nacimiento:");
-        dia=input.nextInt();
+        dia=leer.nextInt();
         System.out.println("Mes de nacimiento:");
-        mes=input.nextInt()-1;
+        mes=leer.nextInt()-1;
         System.out.println("Año de nacimiento:");
-        anio=input.nextInt()-1900;
+        anio=leer.nextInt()-1900;
         Date fecha = new Date(anio,mes,dia);
-        fechaNacimiento = fecha;
+        birthday = fecha;
     }
 
 
+    @Override
+    public String toString() {
+        return "{" +
+            "name='" + getName() + "'" +
+            ", birthday='" + getBirthday() + "'" +
+            "}";
+    }
+
+
+    public int calcularEdad() {
+        Date fechaActual = new Date();
+        int anioActual = fechaActual.getYear();
+        return  (anioActual - birthday.getYear()); 
+    }
+
+    public boolean menorQue(int edadAComparar) {
+        return (this.calcularEdad() < edadAComparar);
+    }
+
+    public void mostrarPersona() {
+        System.out.println("Nombre: " + this.getName());
+        System.out.println("Fecha de nacimiento: " + this.getBirthday());
+
+    }
 }
