@@ -1,6 +1,6 @@
 package ejercicio6;
 
-import javax.swing.plaf.synth.SynthSpinnerUI;
+
 
 public class ejercicio6 {
     public static void main(String[] args) {
